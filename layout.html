@@ -1,32 +1,22 @@
-
-{% load static %}
-{% load rbac %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>路飞学城</title>
-    {% block css %}{% endblock %}
+
 </head>
 <body>
 
 <div class="pg-header">
-    <div class="nav">
-        <div class="logo-area left ">
-            <a href="#">
-                <img class="logo" src="{% static 'stark/imgs/logo.svg' %}">
-                <span style="font-size: 18px;">路飞学城 </span>
-            </a>
-        </div>
-
         <div class="left-menu left">
             <a class="menu-item">资产管理</a>
             <a class="menu-item">用户信息</a>
             <a class="menu-item">路飞管理</a>
-            <a class="menu-item">约饭</a>
+            <li class="menu-item">约饭</li>
+
+            <li class="menu-item">短视频</li>
+
+            <li>bug修复</li>
         </div>
-    </div>
 </div>
-{% block js %} {% endblock %}
+
 </body>
 </html>
